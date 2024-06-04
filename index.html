@@ -9,72 +9,88 @@
   <link rel="stylesheet" href="style.css" />
   <link rel="shortcut icon" href="/Portfolio/Images/resume.png" type="image/x-icon" />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Google+Sans:wght@400;700&amp;display=swap" />
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.3.1/css/bulma.min.css">
 </head>
 
 <body>
-  <nav class="nav">
-    <div class="nav-left">
-      <a href="https://github.com/rendznicoy" class="nav-item">
+  <nav class="nav container void-background">
+    <div class="nav-left" style="display: none;">
+      <a href="" class="nav-item">
         <span class="icon">
           <i class="fa fa-github"></i>
         </span>
       </a>
-      <a href="https://www.linkedin.com/in/rene-angelo-de-los-reyes-9a6a631a0/" class="nav-item">
-        <span class="icon">
-          <i class="fa fa-linkedin"></i>
-        </span>
-      </a>
-      <a href="https://www.facebook.com/rainyjne/" class="nav-item">
-        <span class="icon">
-          <i class="fa fa-facebook"></i>
-        </span>
-      </a>
     </div>
-    <div class="nav-right">
+    <div class="nav-right nav-menu">
       <a class="nav-item" href="#about" class="nav-item">About</a>
       <a class="nav-item" href="#projects" class="nav-item">Projects</a>
-      <a class="nav-item" href="#skills" class="nav-item">Skills</a>
+      <a class="nav-item" href="#experience" class="nav-item">Experience</a>
+      <a class="nav-item" href="#contact" class="nav-item">Contact</a>
     </div>
     <span class="nav-toggle">
       <span></span>
       <span></span>
       <span></span>
     </span>
-    <section id="about" class="section section-one">
-      <div class="container">
-        <img class="avatar" src="/Portfolio/Images/Profile.jpg" />
+  </nav>
+  <section id="about" class="section section-1">
+    <div class="container has-text-centered">
+      <img class="avatar" src="/Portfolio/Images/6.jpg" />
+    </div>
+    <div class="name">
+      <h1 class="title is-1 has-text-centered">Rene Angelo G. de los Reyes</h1>
+    </div>
+    <div class="btn-container">
+      <button class="btn btn-color-2" onclick="downloadCV('./Documents/delosReyes_CV.pdf')">Download CV</button>
+      <button class="btn btn-color-1" onclick="location.href='./#contact'">Contact Info</button>
+    </div>
+    <div class="socials-container">
+      <a href="https://github.com/rendznicoy" class="nav-item">
+        <span class="icon">
+          <i class="fa-brands fa-github"></i>
+        </span>
+      </a>
+      <a href="https://www.linkedin.com/in/rene-angelo-de-los-reyes-9a6a631a0/" class="nav-item">
+        <span class="icon">
+          <i class="fa-brands fa-linkedin"></i>
+        </span>
+      </a>
+      <a href="https://www.facebook.com/rainyjne/" class="nav-item">
+        <span class="icon">
+          <i class="fa-brands fa-facebook"></i>
+        </span>
+      </a>
+    </div>
+    </div>
+    <div class="container">
+      <br />
+      <p class="intro" style="font-size: 20px;">
+        A upcoming 4th Year Computer Science student of the Visayas State
+        University. I am a results-driven individual with a passion for
+        software engineering and UI/UX designing. I am also devoted to
+        learning new system and technologies. I excel in dynamic settings
+        where I can leverage my skills to ensure the success of the project
+        and the organization. Known for being equally adept at leading and
+        supporting others, projects will meet client requirements whilst
+        maintaining a healthy environment for the project team. I am also
+        open to collaborative approaches to share and gain experiences and
+        for continous learning and teaching. Additionally, I am recognized
+        for being friendly, reliable, and efficient.
+      </p>
+    </div>
+  </section>
+  <section id="projects" class="section section-2">
+    <div class="container">
+      <div class="has-text-centered">
+        <h3 class="title is-3">Projects</h3>
       </div>
-      <div class="name">
-        <h1 class="title">Rene Angelo G. de los Reyes</h1>
-      </div>
-      <div class="container">
-        <br />
-        <p class="description">
-          A upcoming 4th Year Computer Science student of the Visayas State
-          University. I am a results-driven individual with a passion for
-          software engineering and UI/UX designing. I am also devoted to
-          learning new system and technologies. I excel in dynamic settings
-          where I can leverage my skills to ensure the success of the project
-          and the organization. Known for being equally adept at leading and
-          supporting others, projects will meet client requirements whilst
-          maintaining a healthy environment for the project team. I am also
-          open to collaborative approaches to share and gain experiences and
-          for continous learning and teaching. Additionally, I am recognized
-          for being friendly, reliable, and efficient.
-        </p>
-      </div>
-    </section>
-    <section id="projects" class="section section-two">
-      <div class="container">
-        <h3 class="title">Projects</h3>
-      </div>
-      <div class="columns is-multiple">
+      <div class="columns is-multiline">
         <div class="column is-half">
           <div class="box project-text">
             <article>
-              <div classs="proj-title">
-                <a href="">ShopSphere E-Commerce Website</a>
+              <div class="proj-title">
+                <h2>ShopSphere E-Commerce Website</h2>
                 <!--No Link Yet-->
               </div>
               <div>
@@ -101,79 +117,279 @@
                 <li>Search, Add, Delete, and View Products</li>
                 <li>Buyer and User Profiles</li>
               </div>
-            </article>
-          </div>
-        </div>
-        <div class="column is-half">
-          <div class="box project-text">
-            <article>
-              <div classs="proj-title">
-                <a href="">Inventify Inventory Management System</a>
-                <!--No Link Yet-->
-              </div>
-              <div>
-                <figure class="image project-figure">
-                  <img class="project-img" src="/Portfolio/Images/2.png" alt="Inventify" />
-                </figure>
-              </div>
-              <div>
-                <p>
-                  Inventify is a web application for managing stocks and inventory, designed to help you monitor your
-                  stocks and
-                  maintain its status as available. With a user-friendly feature, adding stocks, Inventify simplifies
-                  the process of managing your inventory.
-                </p>
-                <br />
-                <h1>FEATURES</h1>
-                <br />
-                <li>
-                  Add New Stock
-                </li>
-                <li>Stock Table</li>
-                <li>Stock Status (Availble or Unavailable)</li>
+              <br>
+              <div class="btn-container">
+                <button class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://github.com/rendznicoy/Simple-e-Commerce-Final'">
+                  Github
+                </button>
+                <button class="btn btn-color-2 project-btn" onclick="location.href=''"">
+                  Live Demo
+                </button>
               </div>
             </article>
           </div>
         </div>
-        <div class="column is-half">
-          <div class="box project-text">
+        <div class=" column is-half">
+                  <div class="box project-text">
+                    <article>
+                      <div class="proj-title">
+                        <h2>Inventify Inventory Management System</h2>
+                        <!--No Link Yet-->
+                      </div>
+                      <div>
+                        <figure class="image project-figure">
+                          <img class="project-img" src="/Portfolio/Images/2.png" alt="Inventify" />
+                        </figure>
+                      </div>
+                      <div>
+                        <p>
+                          Inventify is a web application for managing stocks and inventory, designed to help you monitor
+                          your
+                          stocks and
+                          maintain its status as available. With a user-friendly feature, adding stocks, Inventify
+                          simplifies
+                          the process of managing your inventory.
+                        </p>
+                        <br />
+                        <h1>FEATURES</h1>
+                        <br />
+                        <li>
+                          Add New Stock
+                        </li>
+                        <li>Stock Table</li>
+                        <li>Stock Status (Availble or Unavailable)</li>
+                      </div>
+                      <br>
+                      <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn"
+                          onclick="location.href='https://github.com/rendznicoy/Simple-Inventory-Manager'">
+                          Github
+                        </button>
+                        <button class="btn btn-color-2 project-btn" onclick="location.href=''"">
+                                        Live Demo
+                                      </button>
+                                    </div>
+                    </article>
+                  </div>
+              </div>
+              <div class=" column is-half">
+                          <div class="box project-text">
+                            <article>
+                              <div class="proj-title">
+                                <h2>Online Cake Inventory and Delivery
+                                  System</h2>
+                                <!--No Link Yet-->
+                              </div>
+                              <div>
+                                <figure class="image project-figure">
+                                  <img class="project-img" src="/Portfolio/Images/3.png"
+                                    alt="Gigis Cakes And Pastries" />
+                                </figure>
+                              </div>
+                              <div>
+                                <p>
+                                  Gigis Cakes And Pastries is an online desktop app created to assist Gigis Cakes and
+                                  Pastries in
+                                  managing their
+                                  inventory and delivery.
+                                  Designed for ease of use, the app allows users to add, edit, and delete products from
+                                  their
+                                  inventory.
+                                  Additionally, a separate application is made for the customers.
+                                  Customers can view products and place an order. Built with C# and JSON Database,
+                                  Gigis Cakes and Pastries
+                                  provides a simple and intuitive solution for alike store owners to efficiently manage
+                                  their
+                                  business.
+                                </p>
+                                <br />
+                                <h1>FEATURES</h1>
+                                <br />
+                                <li>
+                                  Admin and Customer Accounts
+                                </li>
+                                <li>Manage Customer Accounts, Inventory, and Order List (Admin Side)</li>
+                                <li>View Products and Place Orders (Customer Side)</li>
+                              </div>
+                              <br>
+                              <div class="btn-container">
+                                <button class="btn btn-color-2 project-btn"
+                                  onclick="location.href='https://github.com/rendznicoy/GigisCakesAndPastries'">
+                                  Github
+                                </button>
+                                <button class="btn btn-color-2 project-btn"
+                                  onclick="location.href='https://github.com/rendznicoy/GigisCakesAndPastries/releases'">
+                                  Installers
+                                </button>
+                              </div>
+                            </article>
+                          </div>
+                      </div>
+                      <div class=" column is-half">
+                        <div class="box project-text">
+                          <article>
+                            <div class="proj-title">
+                              <h2>Hospital Management
+                                System</h2>
+                              <!--No Link Yet-->
+                            </div>
+                            <div>
+                              <figure class="image project-figure">
+                                <img class="project-img" src="/Portfolio/Images/4.png" alt="CS AID" />
+                              </figure>
+                            </div>
+                            <div>
+                              <p>
+                                CS AID is a desktop application that lets you manage around patient records
+                                and see how
+                                these
+                                patients
+                                are doing. It also has a doctor and nurse floor assignment function. You can
+                                manage
+                                employee
+                                assignments for each floor and modify them, this also applies for patient
+                                records and
+                                has an
+                                inventory
+                                system as well.
+                              </p>
+                              <br />
+                              <h1>FEATURES</h1>
+                              <br />
+                              <li>
+                                Admin, Doctor, and Nurse Accounts
+                              </li>
+                              <li>Manage Patient Records, Doctor Duties, and Nurse Duties</li>
+                              <li>Manage Inventory</li>
+                            </div>
+                            <br>
+                            <div class="btn-container">
+                              <button class="btn btn-color-2 project-btn"
+                                onclick="location.href='https://github.com/Freakstahh/CS-Aid-Hospital-Management-System'">
+                                Github
+                              </button>
+                              <button class="btn btn-color-2 project-btn" disabled="true">
+                                Installers
+                              </button>
+                            </div>
+                          </article>
+                        </div>
+                      </div>
+                  </div>
+                  <div class="CV">
+                    <p>More projects can be found on my GitHub Profile.</p>
+  </section>
+  <section id="experience">
+    <p class="section-text">
+      Explore my
+    </p>
+    <h1 class="title">Experience</h1>
+    <div class="experience-details">
+      <div class="about-container">
+        <div class="details-container">
+          <h2 class="experience-subs">Frontend Development</h2>
+          <div class="article-container">
             <article>
-              <div classs="proj-title">
-                <a href="https://github.com/rendznicoy/GigisCakesAndPastries">Online Cake Inventory and Delivery
-                  System</a>
-                <!--No Link Yet-->
-              </div>
-              <div>
-                <figure class="image project-figure">
-                  <img class="project-img" src="/Portfolio/Images/3.png" alt="Gigis Cakes And Pastries" />
-                </figure>
-              </div>
-              <div>
-                <p>
-                  Gigis Cakes And Pastries is an online desktop app created to assist Gigis Cakes and Pastries in
-                  managing their
-                  inventory and delivery.
-                  Designed for ease of use, the app allows users to add, edit, and delete products from their inventory.
-                  Additionally, a separate application is made for the customers.
-                  Customers can view products and place an order. Built with C# and JSON Database,
-                  Gigis Cakes and Pastries
-                  provides a simple and intuitive solution for alike store owners to efficiently manage their business.
-                </p>
-                <br />
-                <h1>FEATURES</h1>
-                <br />
-                <li>
-                  Admin and Customer Accounts
-                </li>
-                <li>Manage Customer Accounts, Inventory, and Order List (Admin Side)</li>
-                <li>View Products and Place Orders (Customer Side)</li>
-              </div>
+              <i class="fa-brands fa-html5 icon"></i>
+              <h3>HTML5</h3>
+              <p>Experienced</p>
+            </article>
+            <article>
+              <i class="fa-brands fa-css3-alt icon"></i>
+              <h3>CSS3</h3>
+              <p>Intermediate</p>
+            </article>
+            <article>
+              <i class="fa-brands fa-js icon"></i>
+              <h3>JavaScript</h3>
+              <p>Basic</p>
+            </article>
+          </div>
+        </div>
+        <div class="details-container">
+          <h2 class="experience-subs">Backend Development</h2>
+          <div class="article-container">
+            <article>
+              <i class="fa fa-database icon"></i>
+              <h3>MySQL</h3>
+              <p>Beginner</p>
+            </article>
+            <article>
+              <i class="fa fa-code-branch icon"></i>
+              <h3>Firebase</h3>
+              <p>Intermediate</p>
+            </article>
+          </div>
+        </div>
+        <div class="details-container">
+          <h2 class="experience-subs">Other Languages</h2>
+          <div class="article-container">
+            <article>
+              <i class="fa fa-c icon"></i>
+              <h3>C/C++/C#</h3>
+              <p>Basic</p>
+            </article>
+            <article>
+              <i class="fa-brands fa-java icon"></i>
+              <h3>Java</h3>
+              <p>Basic</p>
+            </article>
+            <article>
+              <i class="fa-brands fa-python icon"></i>
+              <h3>Python</h3>
+              <p>Intermediate</p>
             </article>
           </div>
         </div>
       </div>
-    </section>
-  </nav>
+    </div>
+  </section>
+  <section id="contact">
+    <p class="section-text">I'm available for contact</p>
+    <h1 class="title">For inquiries, please email, call, or message me on the following contact information below
+    </h1>
+    <div class="contact-info-upper-container">
+      <div class="contact-info-container">
+        <i class="fa fa-envelope icon"></i>
+        <p><a href="mailto:rendzdelosreyes@gmail.com" class="nav-item">rendzdelosreyes@gmail</a></p>
+        <br>
+      </div>
+      <div class="contact-info-container">
+        <i class="fa fa-envelope icon"></i>
+        <p><a href="mailto:21-1-01027@vsu.edu.ph" class="nav-item">21-1-01027@vsu.edu.ph</a></p>
+        <br>
+      </div>
+      <div class="contact-info-container">
+        <i class="fa fa-phone icon"></i>
+        <p style="color: black; " class="nav-item">0999-198-0065</p>
+        <br>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <nav>
+      <div class="nav-links-container">
+        <ul class="nav-links">
+          <li>
+            <a href="#about" class="nav-item">About</a>
+          </li>
+          <li>
+            <a href="#projects" class="nav-item">Projects</a>
+          </li>
+          <li>
+            <a href="#experience" class="nav-item">Experience</a>
+          </li>
+          <li>
+            <a href="#contact" class="nav-item">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <br>
+    <p style="text-align: center;">Copyright © 2024 Rene Angelo G. de los Reyes. All Rights Reserved.</p>
+    <br>
+  </footer>
   <script src="script.js"></script>
 </body>
 
