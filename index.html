@@ -23,10 +23,10 @@
       </a>
     </div>
     <div class="nav-right nav-menu">
-      <a class="nav-item" href="#about" class="nav-item">About</a>
-      <a class="nav-item" href="#projects" class="nav-item">Projects</a>
-      <a class="nav-item" href="#experience" class="nav-item">Experience</a>
-      <a class="nav-item" href="#contact" class="nav-item">Contact</a>
+      <a class="nav-item" id="scrollButton1" href="#about">About</a>
+      <a class="nav-item" id="scrollButton2" href="#projects">Projects</a>
+      <a class="nav-item" id="scrollButton3" href="#experience">Experience</a>
+      <a class="nav-item" id="scrollButton4" href="#contact">Contact</a>
     </div>
     <span class="nav-toggle">
       <span></span>
@@ -43,7 +43,7 @@
     </div>
     <div class="btn-container">
       <button class="btn btn-color-2" onclick="downloadCV('./Documents/delosReyes_CV.pdf')">Download CV</button>
-      <button class="btn btn-color-1" onclick="location.href='./#contact'">Contact Info</button>
+      <button class="btn btn-color-1" id="scrollButton5" onclick="href='#contact'">Contact Info</button>
     </div>
     <div class="socials-container">
       <a href="https://github.com/rendznicoy" class="nav-item">
@@ -123,7 +123,8 @@
                   onclick="location.href='https://github.com/rendznicoy/Simple-e-Commerce-Final'">
                   Github
                 </button>
-                <button class="btn btn-color-2 project-btn" onclick="location.href=''"">
+                <button class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://simple-e-commerce-topaz.vercel.app/'">
                   Live Demo
                 </button>
               </div>
@@ -131,42 +132,43 @@
           </div>
         </div>
         <div class=" column is-half">
-                  <div class="box project-text">
-                    <article>
-                      <div class="proj-title">
-                        <h2>Inventify Inventory Management System</h2>
-                        <!--No Link Yet-->
-                      </div>
-                      <div>
-                        <figure class="image project-figure">
-                          <img class="project-img" src="/Portfolio/Images/2.png" alt="Inventify" />
-                        </figure>
-                      </div>
-                      <div>
-                        <p>
-                          Inventify is a web application for managing stocks and inventory, designed to help you monitor
-                          your
-                          stocks and
-                          maintain its status as available. With a user-friendly feature, adding stocks, Inventify
-                          simplifies
-                          the process of managing your inventory.
-                        </p>
-                        <br />
-                        <h1>FEATURES</h1>
-                        <br />
-                        <li>
-                          Add New Stock
-                        </li>
-                        <li>Stock Table</li>
-                        <li>Stock Status (Availble or Unavailable)</li>
-                      </div>
-                      <br>
-                      <div class="btn-container">
-                        <button class="btn btn-color-2 project-btn"
-                          onclick="location.href='https://github.com/rendznicoy/Simple-Inventory-Manager'">
-                          Github
-                        </button>
-                        <button class="btn btn-color-2 project-btn" onclick="location.href=''"">
+          <div class="box project-text">
+            <article>
+              <div class="proj-title">
+                <h2>Inventify Inventory Management System</h2>
+                <!--No Link Yet-->
+              </div>
+              <div>
+                <figure class="image project-figure">
+                  <img class="project-img" src="/Portfolio/Images/2.png" alt="Inventify" />
+                </figure>
+              </div>
+              <div>
+                <p>
+                  Inventify is a web application for managing stocks and inventory, designed to help you monitor
+                  your
+                  stocks and
+                  maintain its status as available. With a user-friendly feature, adding stocks, Inventify
+                  simplifies
+                  the process of managing your inventory.
+                </p>
+                <br />
+                <h1>FEATURES</h1>
+                <br />
+                <li>
+                  Add New Stock
+                </li>
+                <li>Stock Table</li>
+                <li>Stock Status (Availble or Unavailable)</li>
+              </div>
+              <br>
+              <div class="btn-container">
+                <button class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://github.com/rendznicoy/Simple-Inventory-Manager'">
+                  Github
+                </button>
+                <button class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://simple-inventory-manager.vercel.app/'"">
                                         Live Demo
                                       </button>
                                     </div>
@@ -174,111 +176,110 @@
                   </div>
               </div>
               <div class=" column is-half">
-                          <div class="box project-text">
-                            <article>
-                              <div class="proj-title">
-                                <h2>Online Cake Inventory and Delivery
-                                  System</h2>
-                                <!--No Link Yet-->
-                              </div>
-                              <div>
-                                <figure class="image project-figure">
-                                  <img class="project-img" src="/Portfolio/Images/3.png"
-                                    alt="Gigis Cakes And Pastries" />
-                                </figure>
-                              </div>
-                              <div>
-                                <p>
-                                  Gigis Cakes And Pastries is an online desktop app created to assist Gigis Cakes and
-                                  Pastries in
-                                  managing their
-                                  inventory and delivery.
-                                  Designed for ease of use, the app allows users to add, edit, and delete products from
-                                  their
-                                  inventory.
-                                  Additionally, a separate application is made for the customers.
-                                  Customers can view products and place an order. Built with C# and JSON Database,
-                                  Gigis Cakes and Pastries
-                                  provides a simple and intuitive solution for alike store owners to efficiently manage
-                                  their
-                                  business.
-                                </p>
-                                <br />
-                                <h1>FEATURES</h1>
-                                <br />
-                                <li>
-                                  Admin and Customer Accounts
-                                </li>
-                                <li>Manage Customer Accounts, Inventory, and Order List (Admin Side)</li>
-                                <li>View Products and Place Orders (Customer Side)</li>
-                              </div>
-                              <br>
-                              <div class="btn-container">
-                                <button class="btn btn-color-2 project-btn"
-                                  onclick="location.href='https://github.com/rendznicoy/GigisCakesAndPastries'">
-                                  Github
-                                </button>
-                                <button class="btn btn-color-2 project-btn"
-                                  onclick="location.href='https://github.com/rendznicoy/GigisCakesAndPastries/releases'">
-                                  Installers
-                                </button>
-                              </div>
-                            </article>
-                          </div>
+                  <div class="box project-text">
+                    <article>
+                      <div class="proj-title">
+                        <h2>Online Cake Inventory and Delivery
+                          System</h2>
+                        <!--No Link Yet-->
                       </div>
-                      <div class=" column is-half">
-                        <div class="box project-text">
-                          <article>
-                            <div class="proj-title">
-                              <h2>Hospital Management
-                                System</h2>
-                              <!--No Link Yet-->
-                            </div>
-                            <div>
-                              <figure class="image project-figure">
-                                <img class="project-img" src="/Portfolio/Images/4.png" alt="CS AID" />
-                              </figure>
-                            </div>
-                            <div>
-                              <p>
-                                CS AID is a desktop application that lets you manage around patient records
-                                and see how
-                                these
-                                patients
-                                are doing. It also has a doctor and nurse floor assignment function. You can
-                                manage
-                                employee
-                                assignments for each floor and modify them, this also applies for patient
-                                records and
-                                has an
-                                inventory
-                                system as well.
-                              </p>
-                              <br />
-                              <h1>FEATURES</h1>
-                              <br />
-                              <li>
-                                Admin, Doctor, and Nurse Accounts
-                              </li>
-                              <li>Manage Patient Records, Doctor Duties, and Nurse Duties</li>
-                              <li>Manage Inventory</li>
-                            </div>
-                            <br>
-                            <div class="btn-container">
-                              <button class="btn btn-color-2 project-btn"
-                                onclick="location.href='https://github.com/Freakstahh/CS-Aid-Hospital-Management-System'">
-                                Github
-                              </button>
-                              <button class="btn btn-color-2 project-btn" disabled="true">
-                                Installers
-                              </button>
-                            </div>
-                          </article>
-                        </div>
+                      <div>
+                        <figure class="image project-figure">
+                          <img class="project-img" src="/Portfolio/Images/3.png" alt="Gigis Cakes And Pastries" />
+                        </figure>
                       </div>
+                      <div>
+                        <p>
+                          Gigis Cakes And Pastries is an online desktop app created to assist Gigis Cakes and
+                          Pastries in
+                          managing their
+                          inventory and delivery.
+                          Designed for ease of use, the app allows users to add, edit, and delete products from
+                          their
+                          inventory.
+                          Additionally, a separate application is made for the customers.
+                          Customers can view products and place an order. Built with C# and JSON Database,
+                          Gigis Cakes and Pastries
+                          provides a simple and intuitive solution for alike store owners to efficiently manage
+                          their
+                          business.
+                        </p>
+                        <br />
+                        <h1>FEATURES</h1>
+                        <br />
+                        <li>
+                          Admin and Customer Accounts
+                        </li>
+                        <li>Manage Customer Accounts, Inventory, and Order List (Admin Side)</li>
+                        <li>View Products and Place Orders (Customer Side)</li>
+                      </div>
+                      <br>
+                      <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn"
+                          onclick="location.href='https://github.com/rendznicoy/GigisCakesAndPastries'">
+                          Github
+                        </button>
+                        <button class="btn btn-color-2 project-btn"
+                          onclick="location.href='https://github.com/rendznicoy/GigisCakesAndPastries/releases'">
+                          Installers
+                        </button>
+                      </div>
+                    </article>
                   </div>
-                  <div class="CV">
-                    <p>More projects can be found on my GitHub Profile.</p>
+              </div>
+              <div class=" column is-half">
+                <div class="box project-text">
+                  <article>
+                    <div class="proj-title">
+                      <h2>Hospital Management
+                        System</h2>
+                      <!--No Link Yet-->
+                    </div>
+                    <div>
+                      <figure class="image project-figure">
+                        <img class="project-img" src="/Portfolio/Images/4.png" alt="CS AID" />
+                      </figure>
+                    </div>
+                    <div>
+                      <p>
+                        CS AID is a desktop application that lets you manage around patient records
+                        and see how
+                        these
+                        patients
+                        are doing. It also has a doctor and nurse floor assignment function. You can
+                        manage
+                        employee
+                        assignments for each floor and modify them, this also applies for patient
+                        records and
+                        has an
+                        inventory
+                        system as well.
+                      </p>
+                      <br />
+                      <h1>FEATURES</h1>
+                      <br />
+                      <li>
+                        Admin, Doctor, and Nurse Accounts
+                      </li>
+                      <li>Manage Patient Records, Doctor Duties, and Nurse Duties</li>
+                      <li>Manage Inventory</li>
+                    </div>
+                    <br>
+                    <div class="btn-container">
+                      <button class="btn btn-color-2 project-btn"
+                        onclick="location.href='https://github.com/Freakstahh/CS-Aid-Hospital-Management-System'">
+                        Github
+                      </button>
+                      <button class="btn btn-color-2 project-btn" disabled="true">
+                        Installers
+                      </button>
+                    </div>
+                  </article>
+                </div>
+              </div>
+          </div>
+          <div class="CV">
+            <p>More projects can be found on my GitHub Profile.</p>
   </section>
   <section id="experience">
     <p class="section-text">

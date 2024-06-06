@@ -36,3 +36,59 @@ document.addEventListener("DOMContentLoaded", () => {
     navToggle.classList.toggle("active");
   });
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+  document
+    .getElementById("scrollButton1")
+    .addEventListener("click", function (event) {
+      event.preventDefault();
+      document.getElementById("about").scrollIntoView({ behavior: "smooth" });
+    });
+
+  document
+    .getElementById("scrollButton2")
+    .addEventListener("click", function (event) {
+      event.preventDefault();
+      document
+        .getElementById("projects")
+        .scrollIntoView({ behavior: "smooth" });
+    });
+
+  document
+    .getElementById("scrollButton3")
+    .addEventListener("click", function (event) {
+      event.preventDefault();
+      document
+        .getElementById("experience")
+        .scrollIntoView({ behavior: "smooth" });
+    });
+
+  document
+    .getElementById("scrollButton4")
+    .addEventListener("click", function (event) {
+      event.preventDefault();
+      document.getElementById("contact").scrollIntoView({ behavior: "smooth" });
+    });
+
+  document
+    .getElementById("scrollButton5")
+    .addEventListener("click", function (event) {
+      event.preventDefault();
+      document.getElementById("contact").scrollIntoView({ behavior: "smooth" });
+    });
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+  const smoothScrollLinks = document.querySelectorAll('a[href^="#"]');
+
+  smoothScrollLinks.forEach((link) => {
+    link.addEventListener("click", function (event) {
+      event.preventDefault();
+      const targetId = this.getAttribute("href").substring(1);
+      const targetSection = document.getElementById(targetId);
+      if (targetSection) {
+        targetSection.scrollIntoView({ behavior: "smooth" });
+      }
+    });
+  });
+});
