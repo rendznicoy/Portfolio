@@ -5,7 +5,6 @@ function downloadCV() {
   link.click();
 }
 
-/* Add this to script.js */
 window.addEventListener("scroll", () => {
   const sections = document.querySelectorAll("section");
   const navItems = document.querySelectorAll(".nav-item");
@@ -26,7 +25,6 @@ window.addEventListener("scroll", () => {
   });
 });
 
-/* Add this to script.js */
 document.addEventListener("DOMContentLoaded", () => {
   const navToggle = document.querySelector(".nav-toggle");
   const navMenu = document.querySelector(".nav-right");
