@@ -1,7 +1,7 @@
 function downloadCV() {
   const link = document.createElement("a");
   link.href = "./Documents/delosReyes_CV.pdf";
-  link.download = "delosReyes_CV.pdf"; // Set the downloaded file name
+  link.download = "delosReyes_CV.pdf";
   link.click();
 }
 
@@ -33,19 +33,17 @@ document.addEventListener("DOMContentLoaded", () => {
     navMenu.classList.toggle("active");
     navToggle.classList.toggle("active");
   });
-});
 
-document.addEventListener("DOMContentLoaded", function () {
   document
     .getElementById("scrollButton1")
-    .addEventListener("click", function (event) {
+    .addEventListener("click", (event) => {
       event.preventDefault();
       document.getElementById("about").scrollIntoView({ behavior: "smooth" });
     });
 
   document
     .getElementById("scrollButton2")
-    .addEventListener("click", function (event) {
+    .addEventListener("click", (event) => {
       event.preventDefault();
       document
         .getElementById("projects")
@@ -54,7 +52,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   document
     .getElementById("scrollButton3")
-    .addEventListener("click", function (event) {
+    .addEventListener("click", (event) => {
       event.preventDefault();
       document
         .getElementById("experience")
@@ -63,24 +61,22 @@ document.addEventListener("DOMContentLoaded", function () {
 
   document
     .getElementById("scrollButton4")
-    .addEventListener("click", function (event) {
+    .addEventListener("click", (event) => {
       event.preventDefault();
       document.getElementById("contact").scrollIntoView({ behavior: "smooth" });
     });
 
   document
     .getElementById("scrollButton5")
-    .addEventListener("click", function (event) {
+    .addEventListener("click", (event) => {
       event.preventDefault();
       document.getElementById("contact").scrollIntoView({ behavior: "smooth" });
     });
-});
 
-document.addEventListener("DOMContentLoaded", function () {
   const smoothScrollLinks = document.querySelectorAll('a[href^="#"]');
 
   smoothScrollLinks.forEach((link) => {
-    link.addEventListener("click", function (event) {
+    link.addEventListener("click", (event) => {
       event.preventDefault();
       const targetId = this.getAttribute("href").substring(1);
       const targetSection = document.getElementById(targetId);
@@ -89,4 +85,5 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     });
   });
+  console.log(document.querySelector(".socials-container"));
 });
