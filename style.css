@@ -128,10 +128,9 @@ a {
 }
 
 .icon {
-  font-size: 42px !important;
-  height: 3rem !important;
-  line-height: 3rem !important;
-  width: 3rem !important;
+  height: 100% !important;
+  line-height: 5rem !important;
+  width: 100% !important;
   display: inline-block;
   vertical-align: top;
   text-align: center;
@@ -140,19 +139,6 @@ a {
 span {
   font-style: inherit;
   font-weight: inherit;
-}
-
-.icon .fa {
-  font-size: inherit;
-  line-height: inherit;
-}
-
-.fa {
-  text-align: center;
-  vertical-align: top;
-  display: inline-block;
-  font: normal normal normal 14px;
-  text-rendering: auto;
 }
 
 @media screen and (max-width: 768px) {
@@ -866,4 +852,9 @@ nav {
     width: 100%;
     height: auto;
   }
+}
+
+.logo {
+  height: 100%;
+  width: 100%;
 }
