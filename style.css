@@ -83,10 +83,6 @@ div {
   unicode-bidi: isolate;
 }
 
-a.nav-item {
-  color: #dfdfdf;
-}
-
 a.nav-item:hover {
   color: #dfdfdd !important;
 }
@@ -152,7 +148,6 @@ span {
   vertical-align: top;
   display: inline-block;
   font: normal normal normal 14px;
-  text-rendering: auto;
 }
 
 @media screen and (max-width: 768px) {
